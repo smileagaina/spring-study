@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    使用Spring创建对象，在Spring这些都称为Bean
+    Hello hello = new Hello();
+    bean = 对象 new Hello();
+    -->
+<!--    如果有构造函数重载入，默认的无参构造函数一定要写-->
+<!--    <bean id="user" class="com.shj.pojo.User">-->
+<!--        <property name="name" value="Spring">-->
+
+<!--        </property>-->
+<!--    </bean>-->
+<!--    第一种方式：下标赋值-->
+<!--    <bean id="user" class="com.shj.pojo.User">-->
+<!--        <constructor-arg index="0" value="Spring"></constructor-arg>-->
+<!--    </bean>-->
+    <!-- more bean definitions go here -->
+
+    <!--    第二种方式：通过类型创建。不建议使用-->
+<!--    <bean id="user" class="com.shj.pojo.User">-->
+<!--        <constructor-arg type="java.lang.String" value="qinghua"></constructor-arg>-->
+<!--    </bean>-->
+<!--        第三种方式：通过类型创建。不建议使用-->
+        <bean id="user" class="com.shj.pojo.User">
+            <constructor-arg name="name" value="kokoo"></constructor-arg>
+        </bean>
+
+
+    <bean id="userT" class="com.shj.pojo.User">
+<!--        <constructor-arg name="name" value="kokoo"></constructor-arg>-->
+    </bean>
+</beans>
